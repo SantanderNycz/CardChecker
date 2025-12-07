@@ -83,13 +83,16 @@ export default function CreditCardChecker() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950 py-12 px-4 flex items-center justify-center">
       <div className="max-w-4xl w-full">
+        <h2 className="mb-6 text-slate-200 text-4xl font-bold">
+          Verifique se seu cartão foi clonado!
+        </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Cartões */}
           <div className="space-y-6 flex flex-col items-center">
             {/* Cartão Frente */}
-            <div className="w-full max-w-xs h-56 bg-linear-to-br from-purple-500 to-blue-800 rounded-2xl shadow-2xl p-8 text-white flex flex-col justify-between relative overflow-hidden">
+            <div className="w-full max-w-xs h-56 bg-gradient-to-br from-purple-500 to-blue-800 rounded-2xl shadow-2xl p-8 text-white flex flex-col justify-between relative overflow-hidden">
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-white opacity-10 rounded-full"></div>
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-white opacity-10 rounded-full"></div>
 
@@ -126,7 +129,7 @@ export default function CreditCardChecker() {
             </div>
 
             {/* Cartão Verso */}
-            <div className="w-full max-w-xs h-56 bg-linear-to-br from-slate-600 to-slate-900 rounded-2xl shadow-2xl p-8 relative overflow-hidden">
+            <div className="w-full max-w-xs h-56 bg-gradient-to-br from-slate-600 to-slate-900 rounded-2xl shadow-2xl p-8 relative overflow-hidden">
               <div className="absolute top-8 w-full h-12 bg-black opacity-20"></div>
 
               <div className="mt-16 flex flex-col items-end">
@@ -237,14 +240,14 @@ export default function CreditCardChecker() {
               {/* Botão */}
               <button
                 onClick={validarCartao}
-                className="w-full bg-linear-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-3 rounded-lg transition duration-200 mt-8"
+                className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-3 rounded-lg transition duration-200 mt-8"
               >
                 Checar
               </button>
             </div>
           </div>
         </div>
-        <p className="mt-3 text-blue-200">
+        <p className="mt-3 text-slate-200">
           Obs: este projeto tem somente tom satírico.
           <br /> Os dados <strong>não são</strong> armazenados e{" "}
           <strong>não são</strong> utilizados para qualquer outro fim.
